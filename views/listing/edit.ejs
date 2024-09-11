@@ -1,0 +1,57 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+
+    <h2 class="pt-4 offset-3">Edit your Listing</h2>
+    <form method="POST" action="/listings/<%=listing._id%>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
+
+       <div class="row">
+        <div class="col-8 offset-3">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="listing[title]"  value="<%=listing.title%>" class="form-control" required autocomplete="off">
+            <div class="valid-feedback">Title looks good</div>
+            <div class="invalid-feedback">Enter the valid Title</div>
+           </div>
+           
+           <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="listing[description]" class="form-control"required autocomplete="off"><%=listing.description%></textarea>
+            <div class="invalid-feedback">Enter the valid Description</div>
+           </div>
+           
+           <div class="mb-3">
+            <p>Original Image</p>
+            <img src="<%= originalImgUrl %>" alt="" srcset="">
+           </div>
+
+          <div class="mb-3">
+           <label for="image" class="form-label">Upload new image</label>
+           <input type="file" name="listing[image]"  value="<%=listing.image.filename%>"class="form-control" autocomplete="off" >
+          </div>
+          
+          <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" name="listing[price]"  value="<%=listing.price%>"class="form-control" required  autocomplete="off">
+                <div class="invalid-feedback">Please enter the valid Price</div>
+               </div>
+                
+               <div class="mb-3 col-md-8">
+                 <label for="country" class="form-label">Country</label>
+                 <input type="text" name="listing[country]"  value="<%=listing.country%>"class="form-control" required  autocomplete="off">
+                 <div class="invalid-feedback">Enter the valid Country</div>
+                </div>
+          </div>
+
+          <div class="mb-3">
+           <label for="location" class="form-label">Location</label>
+           <input type="text" name="listing[location]"  value="<%=listing.location%>"class="form-control" required  autocomplete="off">
+           <div class="invalid-feedback">Enter the valid Location</div>
+          </div>
+          
+           <button class="edt-btn btn-dark mt-2 mb-5">Edit</bUtton>
+       </form>
+    </div>
+    </div>
+</body>
+</html>

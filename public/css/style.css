@@ -1,0 +1,139 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex:1;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+
+}
+
+.nav-link{
+    color: #222222 !important;
+    background-color: white !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links:hover a{
+    text-decoration: underline;
+}
+
+.f-info{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+}
+
+.f-info-social , .f-brand ,.f-info-links{
+    width: 100%;
+}
+
+.f-info-social{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.f-info-social i{
+    margin: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+.f-brand{
+    /* margin: 0.3rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-info-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-body{
+    padding:0!important;
+}
+
+.card-text p{
+    color: #222222;
+    font-weight: 400;
+}
+
+.card img{
+    border-radius: 1rem;
+}
+
+
+.listing-link{
+    text-decoration: none;
+    color: #222222;
+}
+
+.listing-link:hover{
+    color: #222222;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.11;
+    background-color:white;
+}
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+    
+}
+
+.edt-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.show.btns{
+    display: flex;
+}
+
+.show-image{
+    height: 50vh;
+}
+
+.btns{
+    display: flex;
+    margin: 2rem;
+}
+
+#mapContainer{
+    width: 600px !important;
+    height: 400px !important;
+}
